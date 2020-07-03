@@ -18,6 +18,6 @@ public class KafKaConsumerService {
     @KafkaListener(topics = {USER_TOPIC}, groupId = "group_json",
             containerFactory = "userKafkaListenerFactory")
     public void consumeJson(UserDetails user) {
-        System.out.println("Consumed JSON Message: " + user);
+        System.out.println("Consumed JSON Message :" + user);
     }
 }
